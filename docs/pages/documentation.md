@@ -15,7 +15,7 @@ $ docsify serve docs
 
 The output directory of the library documentation will be `docs/yard`.
 
-You can consult it online [here](https://noraj/vbsmin/yard/).
+You can consult it online [here](https://noraj.github.io/vbsmin/yard/).
 
 ### Building locally: for library users
 
