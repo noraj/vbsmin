@@ -1,0 +1,52 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# Ruby internal
+require 'pp'
+# Project internal
+require 'vbsmin'
+# External
+require 'docopt'
+require 'paint'
+
+doc = <<~DOCOPT
+  vbsmin - VBScript minifier
+
+  Usage:
+    vbsmin [options] <filepath>
+    vbsmin -h | --help
+    vbsmin --version
+
+  Options:
+    --no-color      Disable colorized output
+    --debug         Display arguments
+    -h, --help      Show this screen
+    --version       Show version
+
+  Examples:
+    vbsmin samples/pyenv.vbs
+    vbsmin --no-color samples/pyenv.vbs
+DOCOPT
+
+begin
+  args = Docopt.docopt(doc, version: VBSMin::VERSION)
+  Paint.mode = 0 if args['--no-color']
+  pp args if args['--debug']
+  # use case 1, using the tool
+  if args['<filepath>']
+    vm = VBSMin.new
+    vm.minify(args['<filepath>'])
+    print Paint['Original file size: ', :bold]
+    puts Paint["#{vm.input_size} bytes", :red]
+    print Paint['Minified file size: ', :bold]
+    puts Paint["#{vm.output_size} bytes", :green]
+    print Paint['Size saved: ', :bold]
+    puts Paint["#{vm.diff_size} bytes", :green, :inverse]
+    puts "\nOriginal file path: #{vm.original_filepath}"
+    puts "Minified file path: #{vm.min_filepath}"
+  end
+  # use case 2, help: already handled by docopt
+  # use case 3, version: already handled by docopt
+rescue Docopt::Exit => e
+  puts e.message
+end

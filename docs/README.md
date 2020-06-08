@@ -1,7 +1,5 @@
 # VBSmin
 
-![](docs/_media/vbsmin_300x300.png)
-
 > VBScript minifier
 
 ## Features
