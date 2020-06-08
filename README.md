@@ -27,7 +27,7 @@
 $ gem install vbsmin
 ```
 
-See more [install](https://noraj.github.io/vbsmin/pages/install) options.
+See more [install](https://noraj.github.io/vbsmin/#/pages/install) options.
 
 **Default usage: CLI**
 
@@ -78,7 +78,7 @@ On Error Resume Next:Set objWbemLocator = CreateObject ("WbemScripting.SWbemLoca
 
 Homepage / Documentation: https://noraj.github.io/vbsmin/
 
-See [why][why] this CLI / tool was required.
+See [why](https://noraj.github.io/vbsmin/#/why) this CLI / tool was required.
 
 ## Use cases
 
