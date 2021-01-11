@@ -73,7 +73,7 @@ class VBSMin
   def min_ext
     extension = File.extname(@original_filepath).downcase
     abort 'Not a .vbs file' unless extension == '.vbs'
-    min_filepath = @original_filepath.chomp(extension) + '.min.vbs'
+    min_filepath = "#{@original_filepath.chomp(extension)}.min.vbs"
     @min_filepath = min_filepath
     return min_filepath
   end
