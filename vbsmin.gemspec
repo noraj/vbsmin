@@ -6,7 +6,6 @@ Gem::Specification.new do |s|
   s.name          = 'vbsmin'
   s.version       = Version::VERSION
   s.platform      = Gem::Platform::RUBY
-  s.date          = '2020-07-13'
   s.summary       = 'VBScript minifier'
   s.description   = 'VBScript minifier CLI tool and library'
   s.authors       = ['Alexandre ZANNI']
