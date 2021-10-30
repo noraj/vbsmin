@@ -40,7 +40,7 @@ class VBSMin
   def minify(filepath)
     @original_filepath = filepath
     # Count number of line of input
-    input_lines = IO.readlines(filepath).length
+    input_lines = File.readlines(filepath).length
     # File streaming
     File.open(min_ext, 'w') do |output|
       File.foreach(filepath).with_index(1) do |line, i|
