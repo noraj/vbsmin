@@ -51,7 +51,7 @@ class VBSMin
         # vertical tab, form feed, carriage return, space
         line.strip!
         # Remove comments except inline ones (must be after whitespace striping)
-        line = '' if line[0] == "'" || line[0..2].upcase == 'REM'
+        line = '' if /^(?:'|REM\b)/i =~ line
         # Remove space when several spaces between two keywords
         line = internal_space(line)
         # Remove line splitting
