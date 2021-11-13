@@ -1,4 +1,4 @@
-## [Unreleased]
+## [1.0.1]
 
 - fix: fix [#50][#50]: too agressive comment stripping was removing non-comment statements
 - rubocop: new rules for new cops
