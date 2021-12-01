@@ -1,3 +1,9 @@
+## [unreleased]
+
+- Dependencies:
+  - Update to yard [v0.9.27](https://github.com/lsegal/yard/releases/tag/v0.9.27)
+    - Move from Redcarpet to CommonMarker markdown provider
+
 ## [1.0.1]
 
 - fix: fix [#50][#50]: too agressive comment stripping was removing non-comment statements

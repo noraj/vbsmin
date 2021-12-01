@@ -19,12 +19,13 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
 
   s.metadata = {
-    'yard.run'          => 'yard',
-    'bug_tracker_uri'   => 'https://github.com/noraj/vbsmin/issues',
-    'changelog_uri'     => 'https://github.com/noraj/vbsmin/blob/master/docs/CHANGELOG.md',
-    'documentation_uri' => 'https://noraj.github.io/vbsmin/',
-    'homepage_uri'      => 'https://noraj.github.io/vbsmin/',
-    'source_code_uri'   => 'https://github.com/noraj/vbsmin/'
+    'yard.run'              => 'yard',
+    'bug_tracker_uri'       => 'https://github.com/noraj/vbsmin/issues',
+    'changelog_uri'         => 'https://github.com/noraj/vbsmin/blob/master/docs/CHANGELOG.md',
+    'documentation_uri'     => 'https://noraj.github.io/vbsmin/',
+    'homepage_uri'          => 'https://noraj.github.io/vbsmin/',
+    'source_code_uri'       => 'https://github.com/noraj/vbsmin/',
+    'rubygems_mfa_required' => 'true'
   }
 
   s.required_ruby_version = ['>= 2.7.0', '< 3.1']

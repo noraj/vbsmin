@@ -126,7 +126,7 @@ class VBSMin
 
   # Remove inline comments
   # In VBS there is no single quote strings so it's safe to remove until the end
-  # of string when ecountering a single quote.
+  # of string when encountering a single quote.
   # The only case to handle if is a single quote appears in a double quote string.
   def inline_comment(line)
     # For each single quote, if there is an odd number of double quote before

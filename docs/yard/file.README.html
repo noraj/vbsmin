@@ -6,7 +6,7 @@
 <title>
   File: README
   
-    &mdash; Documentation by YARD 0.9.25
+    &mdash; Documentation by YARD 0.9.27
   
 </title>
 
@@ -57,51 +57,48 @@
         <div class="clear"></div>
       </div>
 
-      <div id="content"><div id='filecontents'><h1 id="vbsmin">VBSmin</h1>
-
-<p><img src="docs/_media/vbsmin_300x300.png" alt=""></p>
-
+      <div id="content"><div id='filecontents'><h1>VBSmin</h1>
+<p><a href="https://badge.fury.io/rb/vbsmin"><img src="https://badge.fury.io/rb/vbsmin.svg" alt="Gem Version" /></a>
+<img src="https://img.shields.io/github/tag/noraj/vbsmin" alt="GitHub tag (latest SemVer)" />
+<a href="https://github.com/noraj/vbsmin/network"><img src="https://img.shields.io/github/forks/noraj/vbsmin" alt="GitHub forks" /></a>
+<a href="https://github.com/noraj/vbsmin/stargazers"><img src="https://img.shields.io/github/stars/noraj/vbsmin" alt="GitHub stars" /></a>
+<a href="https://github.com/noraj/vbsmin/blob/master/LICENSE"><img src="https://img.shields.io/github/license/noraj/vbsmin" alt="GitHub license" /></a>
+<a href="https://inventory.rawsec.ml/tools.html#VBSmin"><img src="https://inventory.rawsec.ml/img/badges/Rawsec-inventoried-FF5050_flat.svg" alt="Rawsec's CyberSecurity Inventory" /></a></p>
+<p><a href="https://repology.org/project/vbsmin/versions"><img src="https://repology.org/badge/vertical-allrepos/vbsmin.svg" alt="Packaging status" /></a></p>
+<p><img src="docs/_media/vbsmin_300x300.png" alt="" /></p>
 <blockquote>
 <p>VBScript minifier</p>
 </blockquote>
-
-<h2 id="features">Features</h2>
-
+<h2>Features</h2>
 <ul>
 <li>⬜️ Remove extra whitespace
-
 <ul>
 <li>Trailing whitespace</li>
 <li>Leading whitespace</li>
 <li>Blank lines</li>
 <li>Inline extra spaces</li>
-</ul></li>
+</ul>
+</li>
 <li>💬 Remove comments
-
 <ul>
 <li>Single quote (start of the line)</li>
 <li>Single quote (inline)</li>
 <li>REM</li>
-</ul></li>
+</ul>
+</li>
 <li>1️⃣ One-line
-
 <ul>
 <li>Line splitting (underscore)</li>
 <li>Colon</li>
-</ul></li>
 </ul>
-
-<h2 id="quick-start">Quick start</h2>
-
+</li>
+</ul>
+<h2>Quick start</h2>
 <p><strong>Quick install</strong></p>
-
 <pre class="code ruby"><code class="ruby">$ gem install vbsmin
 </code></pre>
-
-<p>See more <a href="https://noraj.github.io/vbsmin/pages/install">install</a> options.</p>
-
+<p>See more <a href="https://noraj.github.io/vbsmin/#/pages/install">install</a> options.</p>
 <p><strong>Default usage: CLI</strong></p>
-
 <pre class="code ruby"><code class="ruby">$ vbsmin samples/features.vbs
 Original file size: 344 bytes
 Minified file size: 244 bytes
@@ -110,19 +107,14 @@ Size saved: 100 bytes
 Original file path: samples/features.vbs
 Minified file path: samples/features.min.vbs
 </code></pre>
-
 <p><strong>Default usage: library</strong></p>
-
 <pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>vbsmin</span><span class='tstring_end'>&#39;</span></span>
 
 <span class='id identifier rubyid_vm'>vm</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="VBSMin.html" title="VBSMin (class)">VBSMin</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="VBSMin.html#initialize-instance_method" title="VBSMin#initialize (method)">new</a></span></span>
 <span class='id identifier rubyid_vm'>vm</span><span class='period'>.</span><span class='id identifier rubyid_minify'>minify</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>samples/features.vbs</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
 </code></pre>
-
-<h2 id="example-of-output">Example of output</h2>
-
+<h2>Example of output</h2>
 <p>So this chunk of script...</p>
-
 <pre class="code vb"><code class="vb">&#39; Get WMI Object.
 On Error Resume Next
 Set objWbemLocator = CreateObject _
@@ -133,44 +125,35 @@ if Err.Number Then
   WScript.Echo vbCrLf &amp; &quot;Error # &quot; &amp; _
                &quot; &quot; &amp; Err.Description
 End If
-On Error GoTo 0 
+On Error GoTo 0	
 </code></pre>
-
 <p>... should be minified to:</p>
-
 <pre class="code vb"><code class="vb">On Error Resume Next:Set objWbemLocator = CreateObject (&quot;WbemScripting.SWbemLocator&quot;):if Err.Number Then:WScript.Echo vbCrLf &amp; &quot;Error # &quot; &amp; &quot; &quot; &amp; Err.Description:End If:On Error GoTo 0
 </code></pre>
-
-<h2 id="references">References</h2>
-
+<h2>References</h2>
 <p>Homepage / Documentation: <a href="https://noraj.github.io/vbsmin/">https://noraj.github.io/vbsmin/</a></p>
-
-<p>See [why][why] this CLI / tool was required.</p>
-
-<h2 id="use-cases">Use cases</h2>
-
+<p>See <a href="https://noraj.github.io/vbsmin/#/why">why</a> this CLI / tool was required.</p>
+<h2>Use cases</h2>
 <ul>
 <li>SQLi: when having a SQLi with write permission, you can write some files on
-the system, but some DBMS like PostgreSQL doesn&#39;t support newlines in an
-insert statement so you have to be able to write a one-line payload </li>
+the system, but some DBMS like PostgreSQL doesn't support newlines in an
+insert statement so you have to be able to write a one-line payload</li>
 <li>File size:
-
 <ul>
 <li>in XSS or Word macro to get the more short and stealthy payload or even
 to bypass security mechanism based on length or size.</li>
 <li>for performance or file upload limit</li>
-</ul></li>
 </ul>
-
-<h2 id="author">Author</h2>
-
+</li>
+</ul>
+<h2>Author</h2>
 <p>Made by Alexandre ZANNI (<a href="https://pwn.by/noraj/">@noraj</a>)</p>
 </div></div>
 
       <div id="footer">
-  Generated on Mon Jun  8 22:52:33 2020 by
+  Generated on Wed Dec  1 11:18:50 2021 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.25 (ruby-2.7.1).
+  0.9.27 (ruby-3.0.1).
 </div>
 
     </div>
