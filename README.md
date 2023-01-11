@@ -5,7 +5,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/noraj/vbsmin)](https://github.com/noraj/vbsmin/network)
 [![GitHub stars](https://img.shields.io/github/stars/noraj/vbsmin)](https://github.com/noraj/vbsmin/stargazers)
 [![GitHub license](https://img.shields.io/github/license/noraj/vbsmin)](https://github.com/noraj/vbsmin/blob/master/LICENSE)
-[![Rawsec's CyberSecurity Inventory](https://inventory.rawsec.ml/img/badges/Rawsec-inventoried-FF5050_flat.svg)](https://inventory.rawsec.ml/tools.html#VBSmin)
+[![Rawsec's CyberSecurity Inventory](https://inventory.raw.pm/img/badges/Rawsec-inventoried-FF5050_flat.svg)](https://inventory.raw.pm/tools.html#VBSmin)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/vbsmin.svg)](https://repology.org/project/vbsmin/versions)
 
