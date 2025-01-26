@@ -1,6 +1,6 @@
 # Metrics
 AllCops:
-  TargetRubyVersion: 2.7
+  TargetRubyVersion: 3.1
   NewCops: enable
   SuggestExtensions: false
 # ~~~ Layout ~~~

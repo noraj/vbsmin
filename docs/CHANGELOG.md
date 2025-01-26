@@ -1,7 +1,8 @@
 ## [unreleased]
 
 - Chore:
-  - Add support for Ruby 3.2
+  - Add support for Ruby 3.2, 3.3, 3.4
+  - **Breaking change**: drop ruby 2.7 and 3.0 support (EOL versions)
 
 ## [1.1.0]
 
