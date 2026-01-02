@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-module Version
-  VERSION = '1.1.0'
+class VBSMin
+  VERSION = '1.2.0'
 end

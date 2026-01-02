@@ -7,9 +7,6 @@ require 'vbsmin/version'
 
 # Global VBSmin class
 class VBSMin
-  # Constants
-  include Version
-
   # @return [Integer] Size (in bytes) of the original file
   attr_reader :input_size
 

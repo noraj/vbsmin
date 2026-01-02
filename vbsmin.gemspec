@@ -4,7 +4,7 @@ require_relative 'lib/vbsmin/version'
 
 Gem::Specification.new do |s|
   s.name          = 'vbsmin'
-  s.version       = Version::VERSION
+  s.version       = VBSMin::VERSION
   s.platform      = Gem::Platform::RUBY
   s.summary       = 'VBScript minifier'
   s.description   = 'VBScript minifier CLI tool and library'
@@ -29,7 +29,7 @@ Gem::Specification.new do |s|
     'rubygems_mfa_required' => 'true'
   }
 
-  s.required_ruby_version = ['>= 3.1.0', '< 4.0']
+  s.required_ruby_version = ['>= 3.2.0', '< 5.0']
 
   s.add_runtime_dependency('docopt', '~> 0.6') # for argument parsing
   s.add_runtime_dependency('paint', '~> 2.2') # for colorized output

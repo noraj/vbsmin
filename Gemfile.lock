@@ -9,7 +9,7 @@ GIT
 PATH
   remote: .
   specs:
-    vbsmin (1.1.0)
+    vbsmin (1.2.0)
       docopt (~> 0.6)
       paint (~> 2.2)
 
@@ -22,12 +22,14 @@ GEM
     docopt (0.6.1)
     json (2.9.1)
     language_server-protocol (3.17.0.3)
-    minitest (5.25.4)
+    minitest (6.0.1)
+      prism (~> 1.5)
     paint (2.3.0)
     parallel (1.26.3)
     parser (3.3.7.0)
       ast (~> 2.4.1)
       racc
+    prism (1.7.0)
     racc (1.8.1)
     rainbow (3.1.1)
     rake (13.2.1)
@@ -48,16 +50,16 @@ GEM
     ruby-progressbar (1.13.0)
     unicode-display_width (3.1.4)
       unicode-emoji (~> 4.0, >= 4.0.4)
-    unicode-emoji (4.0.4)
+    unicode-emoji (4.2.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 2.6)
+  bundler (~> 4.0)
   commonmarker (~> 2.0)
   docopt (~> 0.6)
-  minitest (~> 5.25)
+  minitest (~> 6.0)
   paint (~> 2.3)
   rake (~> 13.2)
   rubocop (~> 1.66)
@@ -65,4 +67,4 @@ DEPENDENCIES
   yard!
 
 BUNDLED WITH
-   2.6.3
+  4.0.3

@@ -1,8 +1,9 @@
-## [unreleased]
+## [1.2.0]
 
 - Chore:
-  - Add support for Ruby 3.2, 3.3, 3.4
-  - **Breaking change**: drop ruby 2.7 and 3.0 support (EOL versions)
+  - Add support for Ruby 3.2, 3.3, 3.4, 4.0
+  - **Breaking change**: drop ruby 2.7, 3.0, 3.1 support (EOL versions)
+  - Change the way version is included. Instead of including a module `Version`, directly add the `VERSION` constant in the `VBSMin` class. It could avoid namespace collision with that kind of generic name.
 
 ## [1.1.0]
 
