@@ -52,7 +52,7 @@ class VBSMin
         # Remove space when several spaces between two keywords
         line = internal_space(line)
         # Remove line splitting
-        line[-1] = '' && eol = '' if line[-2..] == ' _'
+        line[-1] = eol = '' if line[-2..] == ' _'
         # Write processed line unless it is a blank line or the last line
         unless line.empty?
           output.write(line)
