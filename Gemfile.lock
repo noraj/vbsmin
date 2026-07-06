@@ -9,7 +9,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.3)
-    commonmarker (2.8.2)
+    commonmarker (2.8.3)
       rb_sys (~> 0.9)
     docopt (0.6.1)
     drb (2.2.3)
